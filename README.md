@@ -19,12 +19,12 @@ up:25
 
 low:18.3 
 
-# GEREKSİNİMLER 
+# Gereksinimler
 
-Proje python dilinde yazılmıştır. Gerekli kütüphaneler “requirements.txt” dosyasının içinde mevcuttur. 
+Proje python dilinde yazılmıştır. Gerekli kütüphaneler “requirements.txt” dosyasının içinde mevcuttur. Veriyi kazımak için requests ve BeautifulSoup kütüphanelerini kullandım.
 
  
 
-# KODUN AÇIKLAMASI 
+# Kodun Açıklaması
 
 Gerekli kütüphaneleri import ettim. Havadurumux sitesinden veriyi çekmek için ‘extract_data_from_havadurumux’ fonksiyonunu kullandım. Url parametresi ile urlini aldım. Çektiğim verileri liste içerisinde tuttum. Date, up ve low üzerinde düzenlemeler yaparak istenilen formatta dictionary oluşturdum. Aynı işlemi weather.com sitesi içinde fonksiyon kullanarak yaptım. ‘Combine_data ‘ fonksiyonunu kullanarak iki farklı siteden alınan hava durumu verilerini birleştirdim. Parametreleri ‘weather_com_data’ weather’dan elde edilen verileri içeren liste ve ‘havadurumux_data’ havadurumux’dan elde edilen verileri içeren listedir. Zip fonksiyonunu kullanarak birleştirdiğim listelerin elemanlarını eşleştirdim. İstenilen formatta dictonaryi oluşturarak MongoDb’ye ekleme işlemini yaptım. 
