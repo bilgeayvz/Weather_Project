@@ -1,6 +1,11 @@
 # Weather_Project
 Projenin amacı hava durumu sitelerinden (havadurumux, weather.com) Türkiye’nin 81 ili için 1 haftalık  hava durumunu kazımak. Kazınan veriyi MongoDB veritabanına aşağıda belirtilen formatta kaydetmektir. 
 
+
+
+
+
+
 provincial_plate: "01" 
 
 date:2023-11-07T00:00.000+00:00 
